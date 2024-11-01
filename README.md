@@ -58,7 +58,7 @@
 </head>
 <body>
     <div class="Menu">
-        <a href="#">Home</a>
+        <a href="SYFER-eng.github.io">Home</a>
         <a href="TV-Shows.html">TV Shows</a>
         <a href="https://discord.gg/JMfgMwgBxe">Discord sever</a>
 
