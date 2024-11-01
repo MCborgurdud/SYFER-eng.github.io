@@ -60,6 +60,7 @@
     <div class="Menu">
         <a href="#">Home</a>
         <a href="TV-Shows.html">TV Shows</a>
+        <a href="https://discord.gg/JMfgMwgBxe">Discord sever</a>
 
     </div>
     <div class="MovieContainer">
