@@ -76,6 +76,12 @@
         <div class="MovieCard" style="background-image: url('Movie10.jpg');"></div>
         <div class="MovieCard" style="background-image: url('Movie11.jpg');"></div>
         <div class="MovieCard" style="background-image: url('Movie12.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie13.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie14.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie15.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie16.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie17.jpg');"></div>
+        <div class="MovieCard" style="background-image: url('Movie18.jpg');"></div>
     </div>
 </body>
 </html>
