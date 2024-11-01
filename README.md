@@ -1,134 +1,115 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Player</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Selection</title>
+<style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
+        background-color: red;
     }
-
-    .player {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: black;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
-
-    .controls {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100px;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 20px;
-      font-size: 24px;
-      box-sizing: border-box;
-      transition: all 0.3s ease-in-out;
+    
+    .movieCard {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 5px 5px 5px gray;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
     }
-
-    .controls.show {
-      display: block;
+    
+    .MovieCard:hover {
+        transform: scale(1.1);
     }
-
-    .control-btn {
-      cursor: pointer;
-      margin: 0 20px;
+    
+    .MovieCard img {
+        width: 100px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-
-    video {
-      max-width: 100vw;
-      max-height: 100vh;
+    
+    .MovieInfo {
+        font-size: 18px;
+        text-align: center;
+        margin: 0px auto;
+        width: 100px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
     }
-
-    .dropbtn {
-      font-size: 24px;
-      border: none;
-      outline: none;
-      background-color: transparent;
-      color: white;
-      padding: 14px 16px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
+    
+    .MovieInfo:hover {
+        background-color: gray;
     }
-
-    .dropbtn:hover, .dropbtn:focus {
-      opacity: 1;
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        background-color: gray;
+        padding: 10px;
+        margin-bottom: 20px;
     }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
     }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+    
+    .menu a:hover {
+        background-color: black;
+        color: gray;
     }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="MovieCard">
+        <img src="movie1.png" alt="Movie 1">
+        <div class="MovieInfo">Movie 1</div>
+    </div>
+    <div class="MovieCard">
+        <img src="Movie2.png" alt="Movie 2">
+        <div class="MovieInfo">Movie 2</div>
+    </div>
+    <div class="MovieCard">
+        <img src="Movie3.png" alt="Movie 3">
+        <div class="MovieInfo">Movie 3</div>
+    </div>
+    <div class="MovieCard">
+        <img src="Movie4.png" alt="Movie 4">
+        <div class="MovieInfo">Movie 4</div>
+    </div>
+    <!-- Add more MovieCard elements as needed -->
+</div>
 
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    .show {
-      display: block;
-    }
-  </style>
-
-  <script>
-    let player = document.getElementById("player");
-    let controlButton = document.getElementById("controlButton");
-    let menuButton = document.querySelector(".dropbtn");
-    let menu = document.querySelector(".dropdown-content");
-
-    // Function to toggle the controls
-    function toggleControls() {
-      player.classList.toggle("show");
-      if (player.style.display === "none") {
-        player.style.display = "block";
-      } else {
-        player.style.display = "none";
-      }
-    }
-
-    // Function to toggle the menu
-    function toggleMenu() {
-      menu.classList.toggle("show");
-    }
-
-    // Event listener for control button
-    controlButton.addEventListener("click", toggleControls);
-
-    // Event listener for menu button
-    menuButton.addEventListener("click", toggleMenu);
-
-    // Add an event listener to the window to hide the menu when clicked outside
-    window.addEventListener("click", (event) => {
-      if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content')) {
-        menu.classList.remove("show");
-      }
-   
+<div class="menu" style="background-color: red; color: gray; text-align: center; padding: 10px 0px;">
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Favorites</a>
+    <a href="#">Settings</a>
+</div>
+</body>
+</html>
