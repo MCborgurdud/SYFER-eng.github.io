@@ -59,7 +59,7 @@
 <body>
     <div class="Menu">
         <a href="#">Home</a>
-        <a href="#">TV Shows</a>
+        <a href="TV-Shows.html">TV Shows</a>
 
     </div>
     <div class="MovieContainer">
