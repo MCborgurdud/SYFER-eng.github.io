@@ -29,8 +29,8 @@
             text-decoration: none;
         }
         .MovieCard img {
-            width: 100px;
-            height: 150px;
+            width: 150pxpx;
+            height: 300px;
             margin: 0 auto;
             display: block;
         }
@@ -64,11 +64,10 @@
     </div>
     <div class="container">
         <div class="MovieCard">
-            <a href="URL_to_movie_1" target="_blank">
-                <img src="movie_1_image.png" alt="Movie 1">
+            <a href="A-Silent-Voice.html" target="_blank">
+                <img src="https://i.redd.it/4qvzjk0la1p91.jpg" alt="Movie 1">
                 <div class="MovieInfo">
-                    <h2>Movie 1</h2>
-                    <p>Description of Movie 1</p>
+                    <h2>A Silent Voice</h2>
                 </div>
             </a>
         </div>
@@ -77,7 +76,6 @@
                 <img src="Movie_2_image.png" alt="Movie 2">
                 <div class="MovieInfo">
                     <h2>Movie 2</h2>
-                    <p>Description of Movie 2</p>
                 </div>
             </a>
         </div>
