@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Video Player with Menu</title>
+    <title>A Silent Voice</title>
     <style>
         body {
             margin: 0;
@@ -121,7 +121,7 @@
     <div class="container">
         <div class="player">
             <video id="videoPlayer" controls="false" preload="auto" muted="muted" autoplay="autoplay" loop="loop">
-                <source src="your_video_file.mp4" type="video/mp4">
+                <source src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" type="video/mp4">
                 <source src="your_video_file.webm" type="video/webm">
                 <p>Your browser does not support the video tag.</p>
             </video>
@@ -156,10 +156,10 @@
             playPauseButton.addEventListener('click', () => {
                 if (videoPlayer.paused) {
                     videoPlayer.play();
-                    playPauseButton.innerHTML = "⏸";
+                    playPauseButton.innerHTML = "▶";
                 } else {
                     videoPlayer.pause();
-                    playPauseButton.innerHTML = "⏹";
+                    playPauseButton.innerHTML = "⏸";
                 }
             });
 
