@@ -1,81 +1,94 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: white;
-        }
-
-        .movieContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .MovieCard {
-            margin: 10px;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid grey;
-            width: 180px;
-            height: 250px;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .MovieCard:hover {
-            transform: scale(1.05);
-        }
-
-        .MovieImage {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .Menu {
-            background-color: grey;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        .Menu a {
-            color: white;
-            padding: 10px;
-            margin: 0px 10px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .Menu a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background-color: lightsteelblue;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.movie {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    box-shadow: 0 8px 8px 0 black;
+    transition: transform 0.3s ease;
+}
+.Movie:hover {
+    transform: scale(1.1);
+}
+.Movie img {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+.Movie h3 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
+.footer a {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    background-color: white;
+    color: gray;
+}
+</style>
+<title>Movie Selection</title>
 </head>
 <body>
-    <div class="Menu">
-        <a href="SYFER-eng.github.io">Home</a>
-        <a href="SYFER-eng.github.io">Movies</a>
-        <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
-
+<div class="container">
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="movie1.png" alt="Movie 1">
+        <h3>Movie 1</h3>
     </div>
-    <div class="MovieContainer">
-        <div class="MovieCard" style="background-image: url('https://xl.movieposterdb.com/21_12/2021/7991608/xl_7991608_8a4b25b0.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie2.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie3.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie4.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie5.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie6.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie7.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie8.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie9.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie10.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie11.jpg');"></div>
-        <div class="MovieCard" style="background-image: url('Movie12.jpg');"></div>
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="Movie2.png" alt="Movie 2">
+        <h3>Movie 2</h3>
     </div>
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="Movie3.png" alt="Movie 3">
+        <h3>Movie 3</h3>
+    </div>
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="Movie4.png" alt="Movie 4">
+        <h3>Movie 4</h3>
+    </div>
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="Movie5.png" alt="Movie 5">
+        <h3>Movie 5</h3>
+    </div>
+    <div class="Movie" style="background-color: white; padding: 10px; margin-right: 10px; margin-top: 10px; margin-left: 10px;">
+        <img src="Movie6.png" alt="Movie 6">
+        <h3>Movie 6</h3>
+    </div>
+</div>
+<div class="footer">
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a href="#">Login</a>
+</div>
 </body>
 </html>
