@@ -1,159 +1,83 @@
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Dark Purple Hover Images</title>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-
-.image {
-  width: 100% auto;
-  height: 100% auto;
-  object-fit: cover;
-  transition: transform .2s ease;
-}
-
-.image:hover {
-  transform: scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity .2s ease;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    transparent 50%,
-    darkpurple 50%,
-    darkpurple 100%
-  );
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-}
-
-.button {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-nav {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-nav a {
-  margin: 10px;
-}
-
-nav a:hover {
-  color: darkpurple;
-}
-</style>
+	<style>
+		body {
+			background-color: #000000; /* Black background */
+		}
+		a {
+			color: #ffffff; /* White text */
+			text-decoration: none;
+		}
+		a:hover {
+			color: #6c3483; /* Dark Purple hover color */
+		}
+		#menu {
+			background-color: #6c3483; /* Dark Purple menu background */
+			color: #ffffff; /* White text */
+			padding: 10px;
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+		#menu a {
+			color: #ffffff; /* White text */
+			text-decoration: none;
+		}
+		#menu a:hover {
+			color: #ffffff; /* White text hover color */
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		.item {
+			background-color: #444444; /* Dark Gray item background */
+			color: #ffffff; /* White text */
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			transition: background-color 0.3s, transform 0.3s;
+		}
+		.item:hover {
+			background-color: #6c3483; /* Dark Purple hover color */
+			transform: scale(1.05);
+		}
+		.item img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 <body>
-<nav>
-  <a href="button1.html" class="button">Button 1</a>
-  <a href="button2.html" class="button">Button 2</a>
-  <a href="button3.html" class="button">Button 3</a>
-</nav>
-
-<div class="image-container">
-  <img class="image" src="https://i.redd.it/4qvzjk0la1p91.jpg" alt="Image 1">
-  <div class="overlay"></div>
-  <div class="text">Iron Man</div>
-  <a href="Iron-Man.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_2.jpg" alt="Image 2">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image2_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_3.jpg" alt="Image 3">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image3_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_4.jpg" alt="Image 4">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image4_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_5.jpg" alt="Image 5">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image5_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_6.jpg" alt="Image 6">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image6_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_7.jpg" alt="Image 7">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image7_link.html"></a>
-</div>
-
-<div class="image-container">
-  <img class="image" src="your_image_8.jpg" alt="Image 8">
-  <div class="overlay"></div>
-  <div class="text">Hover me</div>
-  <a href="image8_link.html"></a>
-</div>
+	<div id="menu">
+		<a href="#">Menu 1</a>
+		<a href="#">Menu 2</a>
+		<a href="#">Menu 3</a>
+	</div>
+	<div class="container">
+		<div class="item">
+			<img src="image1.jpg" alt="Image 1" />
+			<a href="#">Link 1</a>
+		</div>
+		<div class="item">
+			<img src="image2.jpg" alt="Image 2" />
+			<a href="#">Link 2</a>
+		</div>
+		<div class="item">
+			<img src="image3.jpg" alt="Image 3" />
+			<a href="#">Link 3</a>
+		</div>
+	</div>
 </body>
 </html>
