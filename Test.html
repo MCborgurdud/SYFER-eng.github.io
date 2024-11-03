@@ -1,93 +1,47 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Menu</title>
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  .menu a {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-size: cover;
-    text-align: center;
-    line-height: 100px;
-    margin: 5px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .menu a:hover {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  .image-container {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .image-container a {
-    border: 1px solid #333;
-    border-radius: 50px;
-    margin: 10px;
-    padding: 10px;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    line-height: 90px;
-    transition: background-color 0.3s ease;
-  }
-  .image-container a:hover {
-    background-color: #333;
-    color: white;
-    border: 1px solid white;
-  }
-  .image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Posters</title>
+    <style>
+        .movie {
+            width: 250px;
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .Movie-image {
+            width: 150px;
+            height: 225px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .Movie-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<div class="image-container">
-  <a href="#"><img class="image" src="image1.png" alt="Image 1"></a>
-  <a href="#"><img class="image" src="image2.png" alt="Image 2"></a>
-  <a href="#"><img class="image" src="image3.png" alt="Image 3"></a>
-  <a href="#"><img class="image" src="image4.png" alt="Image 4"></a>
-  <a href="#"><img class="image" src="image5.png" alt="Image 5"></a>
-  <a href="#"><img class="image" src="image6.png" alt="Image 6"></a>
-  <a href="#"><img class="image" src="image7.png" alt="Image 7"></a>
-  <a href="#"><img class="image" src="image8.png" alt="Image 8"></a>
-  <a href="#"><img class="image" src="image9.png" alt="Image 9"></a>
-</div>
-<div class="menu">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-  <a href="#">Services</a>
-  <a href="#">Portfolio</a>
-  <a href="#">Blog</a>
-  <a href="#">Shop</a>
-</div>
-<main>
+    <div class="Movie">
+        <a href="movie1_URL">
+            <img class="Movie-image" src="Movie1_image_URL.jpg" alt="Movie 1 Poster">
+            <div class="Movie-title">Movie 1 Title</div>
+        </a>
+    </div>
+    <div class="Movie">
+        <a href="Movie2_URL">
+            <img class="Movie-image" src="Movie2_image_url.jpg" alt="Movie 2 Poster">
+            <div class="Movie-title">Movie 2 Title</div>
+        </a>
+    </div>
+    <div class="Movie">
+        <a href="Movie3_url">
+            <img class="Movie-image" src="Movie3_image_URL.jpg" alt="Movie 3 Poster">
+            <div class="Movie-title">Movie 3 Title</div>
+        </a>
+    </div>
+    <!-- Add more movie poster links as needed -->
+</body>
+</html>
