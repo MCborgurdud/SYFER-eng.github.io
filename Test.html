@@ -1,86 +1,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Navigation Bar</title>
     <style>
-        body {
-            background-color: lightTeal;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .movieCard {
-            width: 200px;
-            height: 300px;
-            margin: 10px;
-            background-color: white;
-            border: 1px solid black;
-            box-shadow: 5px 5px 5px white;
-            transition: transform 0.3s ease;
-        }
-        .MovieCard:hover {
-            transform: scale(1.1);
-        }
-        .MovieCard a {
-            text-decoration: none;
-        }
-        .MovieCard img {
-            width: 150pxpx;
-            height: 300px;
-            margin: 0 auto;
-            display: block;
-        }
-        .MovieInfo {
-            padding: 10px;
-            text-align: center;
-        }
-        .Menu {
-            background-color: grey;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .Menu a {
-            color: white;
-            text-decoration: none;
-            padding: 200px;
-            margin: 0 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="Menu">
-        <a href="https://syfer-eng.github.io/">Movies</a>
-        <a href="Episodes.html">Episodes</a>
-        <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <title>Video Player</title>
-    <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            box-sizing: border-box;
         }
-        video {
-            width: 80vw;
-            height: 40vh;
-            border: none;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
         }
     </style>
 </head>
 <body>
-<iframe width="940" height="660" frameborder="0" src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" allowfullscreen ></iframe>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisl ut aliquip ex ea commodo consequat.</p>
+
+    <!-- Additional content for your website goes here -->
+
 </body>
 </html>
