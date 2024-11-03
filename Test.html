@@ -1,90 +1,43 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Selection</title>
-    <style>
-        body {
-            background-color: lightTeal;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .movieCard {
-            width: 200px;
-            height: 300px;
-            margin: 10px;
-            background-color: white;
-            border: 1px solid black;
-            box-shadow: 5px 5px 5px grey;
-            transition: transform 0.3s ease;
-        }
-        .MovieCard:hover {
-            transform: scale(1.1);
-        }
-        .MovieCard a {
-            text-decoration: none;
-        }
-        .MovieCard img {
-            width: 150pxpx;
-            height: 300px;
-            margin: 0 auto;
-            display: block;
-        }
-        .MovieInfo {
-            padding: 10px;
-            text-align: center;
-        }
-        .Menu {
-            background-color: grey;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .Menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="Menu">
-        <a href="https://syfer-eng.github.io/">Movies</a>
-        <a href="Episodes.html">Episodes</a>
-        <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
+<meta charset="UTF-8">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+<script>
+  // Function to toggle fullscreen
+  function toggleFullScreen() {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen();
+    }
+  }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Mega Video Embed</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            background-color: black;
-        }
-        
-        iframe {
-            border: none;
-            width: 640px;
-            height: 360px;
-        }
-    </style>
+  // Event listener for the fullscreen button
+  document.getElementById('fullscreenButton').addEventListener('click', toggleFullScreen);
+</script>
 </head>
 <body>
-    <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" allowfullscreen="true"></iframe>
+<video id="myVideo" controls>
+  <!-- Replace the video source with your Mega video URL -->
+  <source src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<button id="fullscreenButton">Toggle Fullscreen</button>
 </body>
 </html>
