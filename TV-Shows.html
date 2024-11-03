@@ -2,43 +2,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syfer's Movie's</title>
+    <title>Syfer's Movies</title>
     <style>
         body {
             background-color: lightTeal;
         }
+
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
+    display: grid;
+    grid-template-rows: repeat(3, 5fr); 
+    gap: 5px;
+    padding: 20px;
+}
         .movieCard {
-            width: 200px;
-            height: 300px;
-            margin: 20px;
             background-color: white;
             border: 1px solid black;
             box-shadow: 5px 5px 5px grey;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
-        .MovieCard:hover {
+        .movieCard:hover {
             transform: scale(1.1);
         }
-        .MovieCard a {
+        .movieCard a {
             text-decoration: none;
         }
-        .MovieCard img {
-            width: 150pxpx;
-            height: 300px;
+        .movieCard img {
+            width: 150px;
+            height: 200px;
             margin: 0 auto;
             display: block;
+            object-fit: cover;
         }
-        .MovieInfo {
+        .movieInfo {
             padding: 10px;
             text-align: center;
         }
-        .Menu {
+        .menu {
             background-color: black;
             display: flex;
             justify-content: center;
@@ -46,36 +47,10 @@
             padding: 10px;
             margin-top: 20px;
         }
-        .Menu a {
+        .menu a {
             color: white;
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
         }
     </style>
-</head>
-<body>
-    <div class="Menu">
-        <a href="https://syfer-eng.github.io/">Movies</a>
-        <a href="Episodes.html">Episodes</a>
-        <a href="TV-Shows.html">TV Shows</a>
-        <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
-        <a href="Test.html">Test</a>
-
-
-    </div>
-    <div class="container">
-        <div class="MovieCard">
-            <a href="A-Silent-Voice.html" target="_blank">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqbSoV8I3Z6AyKtTuvbm3rHKCQs-NwmUTquZxzmfXHzGjOfKkz3ET2nQARBYNpK1Aq01SOhw" alt="Movie 1">
-                <div class="MovieInfo">
-                </div>
-            </a>
-        </div>
-
-
-
-
-        
-</body>
-</html>
