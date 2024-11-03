@@ -58,6 +58,7 @@
     <div class="Menu">
         <a href="https://syfer-eng.github.io/">Movies</a>
         <a href="Episodes.html">Episodes</a>
+        <a href="TV-Shows.html.html">TV Shows</a>
         <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
         <a href="Test.html">Test</a>
 
