@@ -90,6 +90,15 @@
                 </div>
             </a>
         </div>
+
+        <div class="MovieCard">
+            <a href="AnimePahe-Hello-World.html" target="_blank">
+                <img src="https://resizing.flixster.com/a0Gi3J8NO2rET6RuwlN8vrLTkWs=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18010758_v_v8_aa.jpg">
+                <div class="MovieInfo">
+                    <h2>AnimePahe Hello World</h2>
+                </div>
+            </a>
+        </div>
         <!-- Add more MovieCard div elements for each movie -->
     </div>
 </body>
