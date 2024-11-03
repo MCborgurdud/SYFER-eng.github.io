@@ -1,27 +1,63 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
-  }
-
-
-  // Event listener for the fullscreen button
-  document.getElementById('fullscreenButton').addEventListener('click', toggleFullScreen);
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Full Screen Player with Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 999;
+        }
+        .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav a:hover {
+            color: #fff;
+        }
+        .player-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        iframe {
+            border: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-<video id="myVideo" controls>
-  <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" allowfullscreen ></iframe>
-</video>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Videos</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="player-container">
+        <iframe src="https://www.example.com/embedded_player.html" frameborder="0" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
