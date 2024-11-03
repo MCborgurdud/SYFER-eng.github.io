@@ -72,8 +72,8 @@
             </a>
         </div>
         <div class="MovieCard">
-            <a href="URL_to_Movie_2" target="_blank">
-                <img src="Movie_2_image.png" alt="Movie 2">
+            <a href="A-X-L.html" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" alt="A-X-L">
                 <div class="MovieInfo">
                     <h2>Movie 2</h2>
                 </div>
