@@ -117,6 +117,26 @@
                 </div>
             </a>
         </div>
+
+
+        <div class="MovieCard">
+            <a href="Coraline.html" target="_blank">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb_XdtNkaN_HkDNLAff_8mX3_n3TmSD4IjrFzBIafa68QV4RS9vhUBEUE-yosp1qJVk1Y">
+                <div class="MovieInfo">
+                    <h2>Coraline</h2>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="MovieCard">
+            <a href="Guardians-Of-The-Galaxy-Vol.-2.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBrdOvxnlu3pN9GEfkofoCpuYtAYj2hEasyqYjkVjPcshyzdj-wBrRdKLzZkgPBXqUvj48Gg" target="_blank">
+                <div class="MovieInfo">
+                    <h2>Guardians Of The Galaxy Vol. 2</h2>
+                </div>
+            </a>
+        </div>
         <!-- Add more MovieCard div elements for each movie -->
     </div>
 </body>
