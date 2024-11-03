@@ -13,20 +13,7 @@
     object-fit: cover;
     display: block;
   }
-</style>
-<script>
-  // Function to toggle fullscreen
-  function toggleFullScreen() {
-    if (document.documentElement.requestFullscreen) {
-      document.documentElement.requestFullscreen();
-    } else if (document.documentElement.msRequestFullscreen) {
-      document.documentElement.msRequestFullscreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullscreen) {
-      document.documentElement.webkitRequestFullscreen();
-    }
-  }
+
 
   // Event listener for the fullscreen button
   document.getElementById('fullscreenButton').addEventListener('click', toggleFullScreen);
@@ -34,10 +21,7 @@
 </head>
 <body>
 <video id="myVideo" controls>
-  <!-- Replace the video source with your Mega video URL -->
   <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" allowfullscreen ></iframe>
-  Your browser does not support the video tag.
 </video>
-<button id="fullscreenButton">Toggle Fullscreen</button>
 </body>
 </html>
