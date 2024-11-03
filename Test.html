@@ -1,63 +1,93 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Silent Voice</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            font-family: Arial, sans-serif;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #333;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            z-index: 999;
-        }
-        .nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        .nav a:hover {
-            color: #fff;
-        }
-        .player-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-        iframe {
-            border: 0;
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Menu</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  .menu a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .menu a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  .image-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .image-container a {
+    border: 1px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    transition: background-color 0.3s ease;
+  }
+  .image-container a:hover {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+  }
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+</style>
 </head>
 <body>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Videos</a>
-        <a href="#">Contact</a>
-    </div>
-    <div class="player-container">
-        <iframe src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" frameborder="0" allowfullscreen></iframe>
-    </div>
-</body>
-</html>
+<div class="image-container">
+  <a href="#"><img class="image" src="image1.png" alt="Image 1"></a>
+  <a href="#"><img class="image" src="image2.png" alt="Image 2"></a>
+  <a href="#"><img class="image" src="image3.png" alt="Image 3"></a>
+  <a href="#"><img class="image" src="image4.png" alt="Image 4"></a>
+  <a href="#"><img class="image" src="image5.png" alt="Image 5"></a>
+  <a href="#"><img class="image" src="image6.png" alt="Image 6"></a>
+  <a href="#"><img class="image" src="image7.png" alt="Image 7"></a>
+  <a href="#"><img class="image" src="image8.png" alt="Image 8"></a>
+  <a href="#"><img class="image" src="image9.png" alt="Image 9"></a>
+</div>
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Blog</a>
+  <a href="#">Shop</a>
+</div>
+<main>
