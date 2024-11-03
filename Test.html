@@ -1,63 +1,34 @@
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Top Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Mega Video Embed</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 15px;
+            height: 100vh;
             width: 100vw;
-            position: fixed;
-            top: 0;
-            z-index: 999;
+            overflow: hidden;
+            background-color: black;
         }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav li {
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #fff;
-            color: #333;
+        
+        iframe {
+            border: none;
+            width: 640px;
+            height: 360px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI" allowfullscreen="true"></iframe>
 </body>
 </html>
-https://mega.nz/embed/Mqty0ZwA#FYUNdaURlz2GGweqmXKzj4Pi1q6nkks3VUVQ7lq_KjI
+```
+
+In this HTML code snippet, I've wrapped the `<iframe>` with a `body` element that has a `display: flex` property to center it both vertically and horizontally on the page. The `justify-content` and `align-items` properties are set to `center` to achieve this. Additionally, the `margin`, `padding`, and `overflow` properties of the `body` are set to ensure that there is no space around the `<iframe>` and that the content fits the full screen
