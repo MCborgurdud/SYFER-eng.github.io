@@ -2,54 +2,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoStream.to Style Menu</title>
+    <title>GoStream.to Homepage</title>
     <style>
         body {
             background-color: black;
         }
-        .menu {
+        
+        .nav-container {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: space-between;
             padding: 20px;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .menu a:hover {
-            background-color: darkpurple;
-        }
-        .image-container {
-            margin: 50px 0;
+            color: white;
             text-align: center;
         }
-        .image-container img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
+        
+        .nav-button {
+            background-color: #3f0e6b;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
         }
-        .image-container:hover img {
-            transform: scale(1.2);
+        
+        .nav-button:hover {
+            background-color: #5b0e8b;
+        }
+        
+        .nav-button:focus {
+            outline: none;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .image {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 20px;
+            border-radius: 10px;
+        }
+        
+        .image:hover {
+            background-color: #3f0e6b;
         }
     </style>
 </head>
 <body>
-    <div class="menu">
-        <a href="Syfer-Menu.html">Movies</a> 
-        <a href="Episodes.html">Episodes</a>
-        <a href="TV-Shows.html">TV Shows</a>
+    <div class="nav-container">
+        <a class="nav-button" href="#">Home</a>
+        <a class="nav-button" href="#">Movies</a>
+        <a class="nav-button" href="#">TV Shows</a>
     </div>
+    
     <div class="image-container">
-        <img src="your-image-source.jpg" alt="Featured Image">
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image1.png');"></div>
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image2.png');"></div>
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image3.png');"></div>
+    </div>
+
+    <div class="image-container" style="margin-top: 100px;">
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image4.png');"></div>
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image5.png');"></div>
+        <div class="image" style="background-image: url('https://i.ibb.co/YpWgvzF/image6.png');"></div>
     </div>
 </body>
 </html>
