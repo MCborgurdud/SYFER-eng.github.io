@@ -72,7 +72,7 @@
                     <h2>A Silent Voice</h2>
                 </div>
             </a>
-        </div>
+    </div>
         <div class="MovieCard">
             <a href="A-X-L.html" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" alt="A-X-L.html">
@@ -80,7 +80,7 @@
                     <h2>A-X-L</h2>
                 </div>
             </a>
-        </div>
+     </div>
         
         <div class="MovieCard">
             <a href="Blue-Beetle.html" target="_blank">
@@ -89,7 +89,7 @@
                     <h2>Blue Beetle</h2>
                 </div>
             </a>
-        </div>
+    </div>
 
         <div class="MovieCard">
             <a href="AnimePahe-Hello-World.html" target="_blank">
@@ -98,7 +98,7 @@
                     <h2>AnimePahe Hello World</h2>
                 </div>
             </a>
-        </div>
+    </div>
 
         <div class="MovieCard">
             <a href="Bad-Boys-Ride-or-Die.html" target="_blank">
@@ -107,7 +107,7 @@
                     <h2>Bad Boys Ride or Die</h2>
                 </div>
             </a>
-        </div>
+    </div>
 
         <div class="MovieCard">
             <a href="Big-City-Greens-the-Movie.html" target="_blank">
@@ -118,7 +118,6 @@
             </a>
         </div>
 
-
         <div class="MovieCard">
             <a href="Coraline.html" target="_blank">
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb_XdtNkaN_HkDNLAff_8mX3_n3TmSD4IjrFzBIafa68QV4RS9vhUBEUE-yosp1qJVk1Y">
@@ -127,7 +126,6 @@
                 </div>
             </a>
         </div>
-
 
         <div class="MovieCard">
             <a href="Guardians-Of-The-Galaxy-Vol.-2.html">
