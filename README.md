@@ -104,7 +104,16 @@
             <a href="Bad-Boys-Ride-or-Die.html" target="_blank">
                 <img src="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg">
                 <div class="MovieInfo">
-                    <h2>Bad Boys Ride or Die</h2>
+                    <h2></h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="MovieCard">
+            <a href="Big-City-Greens-the-Movie.html" target="_blank">
+                <img src="https://resizing.flixster.com/0xB-7eMeEv2pdl8ykyur4xVGE5A=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p27185063_v_v13_ac.jpg">
+                <div class="MovieInfo">
+                    <h2>Big City Greens the Movie</h2>
                 </div>
             </a>
         </div>
