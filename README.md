@@ -99,6 +99,15 @@
                 </div>
             </a>
         </div>
+
+        <div class="MovieCard">
+            <a href="Bad-Boys-Ride-or-Die.html" target="_blank">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg">
+                <div class="MovieInfo">
+                    <h2>Bad Boys Ride or Die</h2>
+                </div>
+            </a>
+        </div>
         <!-- Add more MovieCard div elements for each movie -->
     </div>
 </body>
