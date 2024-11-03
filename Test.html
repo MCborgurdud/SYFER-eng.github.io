@@ -21,6 +21,7 @@
             border: 1px solid black;
             box-shadow: 5px 5px 5px grey;
             transition: transform 0.3s ease;
+            position: relative;
         }
         .MovieCard:hover {
             transform: scale(1.1);
@@ -29,14 +30,25 @@
             text-decoration: none;
         }
         .MovieCard img {
-            width: 150px;
-            height: 225px;
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
             margin: 0 auto;
-            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
         }
         .MovieInfo {
             padding: 10px;
             text-align: center;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-shadow: 0px 0px 5px black;
         }
         .Menu {
             background-color: black;
@@ -56,100 +68,101 @@
 </head>
 <body>
     <div class="Menu">
-        <a href="Movies.html" target="_blank">Movies</a>
-        <a href="Episodes.html" target="_blank">Episodes</a>
-        <a href="TV-Shows.html" target="_blank">TV Shows</a>
-        <a href="https://discord.gg/JMfgMwgBxe" target="_blank">Discord Server</a>
+        <a href="https://syfer-eng.github.io/">Movies</a>
+        <a href="Episodes.html">Episodes</a>
+        <a href="TV-Shows.html">TV Shows</a>
+        <a href="https://discord.gg/JMfgMwgBxe">Discord Sever</a>
+        <a href="Test.html">Test</a>
     </div>
     <div class="container">
         <div class="MovieCard">
             <a href="A-Silent-Voice.html" target="_blank">
-                <img src="https://i.redd.it/4qvzjk0la1p91.jpg" alt="Movie 1">
                 <div class="MovieInfo">
                     <h2>A Silent Voice</h2>
                 </div>
+                <img src="https://i.redd.it/4qvzjk0la1p91.jpg" alt="Movie 1" style="z-index: 1000;">
             </a>
         </div>
+        
         <div class="MovieCard">
             <a href="A-X-L.html" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" alt="A-X-L.html">
                 <div class="MovieInfo">
                     <h2>A-X-L</h2>
                 </div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" alt="A-X-L.html" style="z-index: 1000;">
             </a>
         </div>
         
         <div class="MovieCard">
             <a href="Blue-Beetle.html" target="_blank">
-                <img src="https://m.media-amazon.com/images/M/MV5BYzllNjdjODctNGMwMC00MWYzLTgwMDgtNmVkMDJiNGM2YjI3XkEyXkFqcGc._V1_.jpg" alt="A Silent Voic.html">
                 <div class="MovieInfo">
                     <h2>Blue Beetle</h2>
                 </div>
+                <img src="https://m.media-amazon.com/images/M/MV5BYzllNjdjODctNGMwMC00MWYzLThiYjUtM2Y5YTJmNzY2NmQ4MmY4XkEyXkFqcGdeQXVyMTUyNjU0NTAyMjY@._V1_.jpg" alt="Movie 2" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="AnimePahe-Hello-World.html" target="_blank">
-                <img src="https://resizing.flixster.com/a0Gi3J8NO2rET6RuwlN8vrLTkWs/_V1/v3/t/assets/p18010758_v_v8_aa.jpg" alt="AnimePahe Hello World.html">
                 <div class="MovieInfo">
-                    <h2>Hello World</h2>
+                    <h2>AnimePahe Hello World</h2>
                 </div>
+                <img src="https://resizing.flixster.com/a0Gi3J8NO2rET6RuwlN8vrLTkWs/_V1.jpg" alt="AnimePahe Hello World" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="Bad-Boys-Ride-or-Die.html" target="_blank">
-                <img src="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc._V1_.jpg" alt="Bad Boys Ride or Die.html">
                 <div class="MovieInfo">
-                    <h2>BadBoysRideorDie</h2>
+                    <h2>Bad Boys Ride or Die</h2>
                 </div>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg" alt="Movie 3" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="Big-City-Greens-the-Movie.html" target="_blank">
-                <img src="https://m.media-amazon.com/images/M/MV5BZjhkOGFmYTAtZmQxOS00Zmk0LWIyYTItM2IxZTU2M2RhZTg1NmVlXkEyXkFqcGc._V1_.jpg" alt="Big City Greens the Movie.html">
                 <div class="MovieInfo">
-                    <h2>Big City Greens</h2>
+                    <h2>Big City Greens the Movie</h2>
                 </div>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjhkOGFmYTAtZmQxOS00Zmk0LWItM2ExZTQ1ZTg2ZTEwZTU2XkEyXkFqcGdeQXVyMTI5MzI0MjgwMjU@._V1_.jpg" alt="Movie 4" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="Coraline.html" target="_blank">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb_XdtNkaN_HkDNLAff_8mX3_n3TmSD4IjrFzBIafa68QV4RS9vhUBEU-yosp1Y" alt="Coraline.html">
                 <div class="MovieInfo">
                     <h2>Coraline</h2>
                 </div>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb_XdtNkaN_HkDNLAff_8mX3_n3TmSD4IjrFzBIafa68QV4RS9vhUBEUE-yosp1qJVk1Y" alt="Movie 5" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="Guardians-Of-The-Galaxy-Vol.-2.html" target="_blank">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBrdOvxnlu3pN9GEfkofoCpuYtAYj2hEasyqYjkVjPcshyzdj-wBrD_KLzZkgPBXqUvj48Gg" alt="Guardians Of The Galaxy Vol. 2.html">
                 <div class="MovieInfo">
-                    <h2>GuardiansOfTheGalaxy2</h2>
+                    <h2>Guardians Of The Galaxy Vol. 2</h2>
                 </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBrdOvxnlu3pN9GEfkofoCpuYtAYj2hEasyqYjkVj48Ggsxj-wBrRdKLzZkgPXqUvj48Gg" alt="Movie 6" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
-            <a href="Iron-Man.html" target="_blank">
-                <img src="https://filmartgallery.com/cdn/shop/products/Iron-Man-Vintage-Movie-Poster-Original-1-Sheet-27x41.jpg" alt="Iron Man.html">
+            <a href="Iron-Man.html">
                 <div class="MovieInfo">
                     <h2>Iron Man</h2>
                 </div>
+                <img src="https://filmartgallery.com/cdn/shop/products/Iron-Man-Vintage-Movie-Poster-Original-1-Sheet-27x41.jpg" alt="Movie 7" style="z-index: 1000;">
             </a>
         </div>
 
         <div class="MovieCard">
             <a href="Pacific-Rim.html" target="_blank">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDqg6_kMFhtrucViqktU6RdhsrLwnkN5ZdUpQeC8BGqCPLG9dy2_yl7vFNJOu5E-rJnWaZw" alt="Pacific Rim.html">
                 <div class="MovieInfo">
                     <h2>Pacific Rim</h2>
                 </div>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDqg6_kMFhtrucViqktU6RdhsrLwnkN5ZdUpQeC8BGqCPLG9dy2_yl7vFNJOu5E-rJnWaZw" alt="Movie 8" style="z-index: 1000;">
             </a>
         </div>
-    </div>
-</body>
+    </body>
 </html>
