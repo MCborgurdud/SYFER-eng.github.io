@@ -70,6 +70,12 @@
 			border-bottom: 1px solid #ddd;
 		}
 
+		#search-results img {
+			cursor: pointer;
+			margin: 10px;
+			max-width: 150px;
+		}
+
 		#search-results a {
 			text-decoration: none;
 			color: #333;
@@ -92,9 +98,18 @@
 
 	<div id="search-results">
 		<ul>
-			<li><a href="#">Movie 1</a></li>
-			<li><a href="#">Movie 2</a></li>
-			<li><a href="#">Movie 3</a></li>
+			<li>
+				<img src="movie1.jpg" alt="Movie 1" onclick="window.location.href='https://www.example.com/movie1'">
+				<a href="#">Movie 1</a>
+			</li>
+			<li>
+				<img src="movie2.jpg" alt="Movie 2" onclick="window.location.href='https://www.example.com/movie2'">
+				<a href="#">Movie 2</a>
+			</li>
+			<li>
+				<img src="movie3.jpg" alt="Movie 3" onclick="window.location.href='https://www.example.com/movie3'">
+				<a href="#">Movie 3</a>
+			</li>
 			<!-- Add more movie links as needed -->
 		</ul>
 	</div>
