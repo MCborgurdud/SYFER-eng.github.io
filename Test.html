@@ -2,72 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Streaming Menu</title>
+    <title>GoStream.to Style Menu</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             background-color: black;
-            font-family: 'Arial', sans-serif;
         }
-        .menu-container {
+        .menu {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
             padding: 20px;
         }
-        .menu-item {
-            margin: 10px;
-            width: 200px;
-            height: 300px;
-            border: 2px solid darkpurple;
-            border-radius: 10px;
-            text-align: center;
-            background-color: darkpurple;
-            color: white;
-            transition: all 0.3s ease-in-out;
-        }
-        .menu-item:hover {
-            transform: scale(1.05);
-            background-color: #9c27b0;
-        }
-        .menu-item a {
-            display: block;
-            padding: 20px;
-            font-size: 1.2em;
+        .menu a {
             color: white;
             text-decoration: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: darkpurple;
+        }
+        .image-container {
+            margin: 50px 0;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
-    <div class="menu-container">
-        <div class="menu-item">
-            <a href="video1.html" class="play-button"></a>
-            <img src="video1-thumb.jpg" alt="Video 1" width="150px" height="150px" class="thumb-image">
-            <h3>Video 1 Title</h3>
-            <p>Video 1 description goes here.</p>
-        </div>
-        <div class="menu-item">
-            <a href="video2.html" class="play-button"></a>
-            <img src="video2-thumb.jpg" alt="Video 2" width="150px" height="150px" class="thumb-image">
-            <h3>Video 2 Title</h3>
-            <p>Video 2 description goes here.</p>
-        </div>
-        <div class="menu-item">
-            <a href="video3.html" class="play-button"></a>
-            <img src="video3-thumb.jpg" alt="Video 3" width="150px" height="150px" class="thumb-image">
-            <h3>Video 3 Title</h3>
-            <p>Video 3 description goes here.</p>
-        </div>
-        <div class="menu-item">
-            <a href="Choraline.html" class="play-button"></a>
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRb_XdtNkaN_HkDNLAff_8mX3_n3TmSD4IjrFzBIafa68QV4RS9vhUBEUE-yosp1qJVk1Y" alt="Video 4" width="150px" height="150px" class="thumb-image">
-            <h3>Choraline</h3>
-        </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+    </div>
+    <div class="image-container">
+        <img src="your-image-source.jpg" alt="Featured Image">
     </div>
 </body>
 </html>
