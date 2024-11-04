@@ -1,1 +1,85 @@
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boys Episode Picker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px 1px grey;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu a.active {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="The-Boys-S1.html" class="active">Season 1</a>
+            <a href="The-Boys-S2.html" class="active">Season 2</a>
+            <a href="The-Boys-S3.html" class="active">Season 3</a>
+            <a href="The-Boys-S4.html" class="active">Season 4</a>
+            <a href="The-Boys-S5.html" class="active">Season 5</a>
+        </div>
+        <div class="content">
+            <h2>Episodes of Season 1</h2>
+            <ul>
+                <li><a href="#">Episode 1: Pilot</a></li>
+                <li><a href="#">Episode 2: The City on the Edge of Forever</a></li>
+                <li><a href="#">Episode 3: The Enemy Within</a></li>
+                <li><a href="#">Episode 4: Mudd's Women</a></li>
+                <li><a href="#">Episode 5: The Corbomite Maneuver</a></li>
+                <li><a href="#">Episode 6: Pilot</a></li>
+                <li><a href="#">Episode 7: Pilot</a></li>
+                <li><a href="#">Episode 8: Pilot</a></li>
+                <!-- Add more episodes as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
