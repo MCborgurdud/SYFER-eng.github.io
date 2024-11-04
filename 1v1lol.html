@@ -1,35 +1,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Bowl in HTML</title>
+    <title>1v1.lol Embedded in HTML</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         iframe {
             border: none;
             width: 100vw;
             height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <iframe src="https://retrobowl.se/play" allow="fullscreen"></iframe>
+    <div>
+        <h1>Welcome to 1v1.lol Embedded in HTML</h1>
+        <p>Please click the button below to start playing 1v1.lol inside the webpage.</p>
+        <button onclick="startGame()">Start Game</button>
     </div>
+
+    <script>
+        function startGame() {
+            const gameFrame = document.createElement('iframe');
+            gameFrame.src = 'https://1v1.lol';
+            gameFrame.style.width = '100vw';
+            gameFrame.style.height = '100vh';
+            gameFrame.style.position = 'absolute';
+            gameFrame.style.top = '0';
+            gameFrame.style.left = '0';
+            gameFrame.style.zIndex = '1';
+            document.body.appendChild(gameFrame);
+            document.body.style.overflow = 'hidden';
+            document.body.style.background = 'transparent';
+            setTimeout(() => {
+                gameFrame.style.backgroundColor = 'transparent';
+            }, 0);
+        }
+    </script>
 </body>
 </html>
