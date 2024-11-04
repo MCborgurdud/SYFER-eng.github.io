@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Minecraft Clone</title>
+	<style>
+		/* Basic styling */
+		body {
+			background-color: #4A4A4A; /* dark gray */
+			color: #FFFFFF; /* white */
+			font-family: monospace;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		#container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			background-color: #4A4A4A;
+			box-shadow: 0px 0px 10px #000000;
+		}
+
+		#game {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 600px;
+			height: 400px;
+			background-color: #4A4A4A;
+			box-shadow: 0px 0px 10px #000000;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		.tile {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			background-color: #CCCCCC; /* light gray */
+			border-radius: 5px;
+		}
+
+		.tile.active {
+			background-color: #FFC533; /* yellow */
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="game">
+			<!-- Game grid will be generated here -->
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<!-- ...and so on -->
+		</div>
+	</div>
+
+	<script>
+		// JavaScript code to handle game logic and interactions
+		const gameGrid = document.getElementById("game");
+		const tiles = gameGrid.querySelectorAll(".tile");
+
+		let currentPlayer = "player1";
+		let currentPlayerColor = "#FFC533"; // yellow
+
+		tiles.forEach((tile) => {
+			tile.addEventListener("click", (e) => {
+				if (tile.classList.contains("active")) {
+					// Already active, so deactivate
+					tile.classList.remove("active");
+				} else {
+					// Not active, so activate
+					tile.classList.add("active");
+					tile.style.backgroundColor = currentPlayerColor;
+				}
+			});
+		});
+
+		// Switch player color on each turn
+		function switchPlayer() {
+			currentPlayer = currentPlayer === "player1" ? "player2" : "player1";
+			currentPlayerColor = currentPlayer === "player1" ? "#FFC533" : "#0000FF"; // blue
+		}
+	</script>
+</body>
+</html>
