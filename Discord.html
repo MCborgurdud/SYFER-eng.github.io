@@ -1,23 +1,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord in Browser</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-        }
-        iframe {
-            border: none;
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
+    <title>Bing in the Browser</title>
 </head>
 <body>
-    <iframe src="https://discord.com/app" frameborder="0"></iframe>
+    <h1>Bing in the Browser</h1>
+    <p>Welcome to the in-browser version of Bing!</p>
+    
+    <audio id="bingSound" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Windows_XP_Startup_Sound_%280:04%29.ogg"></audio>
+    <button onclick="playBing()">Play Bing Sound</button>
+    
+    <div id="bingContainer"></div>
+    <script>
+        function playBing() {
+            const bingSound = document.getElementById("bingSound");
+            bingSound.play();
+        }
+        
+        // Function to simulate browsing
+        function browse() {
+            alert("Please imagine the browser opening to Bing.com, as we are unable to actually open websites within this HTML page.");
+        }
+        
+        // Event listener for the browse button
+        document.getElementById("browseButton").addEventListener("click", browse);
+    </script>
+    
+    <button id="browseButton">Browse</button>
 </body>
 </html>
