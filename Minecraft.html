@@ -1,34 +1,63 @@
-<link rel="shortcut icon" href="https://cdn3.emoji.gg/emojis/16037-haunterspin.gif"/>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Syfer Minecraft</title>
-
-        <h1>Welcome to Syfer Minecraft</h1>
-        <p>Please click the button below to start playing Minecraft</p>
-        <button onclick="startGame()">Start Game</button>
-    </div>
-
-    <script>
-        function startGame() {
-            const gameFrame = document.createElement('iframe');
-            gameFrame.src = 'https://1v1.lol';
-            gameFrame.style.width = '100vw';
-            gameFrame.style.height = '100vh';
-            gameFrame.style.position = 'absolute';
-            gameFrame.style.top = '0';
-            gameFrame.style.left = '0';
-            gameFrame.style.zIndex = '1';
-            document.body.appendChild(gameFrame);
-            document.body.style.overflow = 'hidden';
-            document.body.style.background = 'transparent';
-            setTimeout(() => {
-                gameFrame.style.backgroundColor = 'transparent';
-            }, 0);
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syfer's Minecraft</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            cursor: none;
         }
+
+        #gameCanvas {
+            width: 800px;
+            height: 600px;
+            border: none;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script>
+        // Check if the browser supports the canvas element
+        if (document.getElementById("gameCanvas")) {
+            var canvas = document.getElementById("gameCanvas");
+            var context = canvas.getContext("2d");
+        }
+
+        // Set the canvas size to the viewport size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Set up the mouse event handlers
+        document.addEventListener("mousemove", function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            context.translate(x - canvas.width / 2, y - canvas.height / 2);
+        });
+
+        // Set the cursor style to be hidden
+        document.body.style.cursor = "none";
+
+        var gameIframe = document.createElement("iframe");
+        gameIframe.src = "    https://minecraftforfreex.com/eaglercraft/";
+        gameIframe.width = "100%";
+        gameIframe.height = "100%";
+        gameIframe.frameBorder = "0";
+        gameIframe.allowFullscreen = true;
+        document.body.appendChild(gameIframe);
     </script>
-
-
-
-
-    https://minecraftforfreex.com/eaglercraft/
+</body>
+</html>
