@@ -2,76 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loser Games</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        
-        .container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .menu {
-            position: absolute;
-            top: 0;
-            width: 100vw;
-            padding: 20px;
-            background-color: #fff;
-            z-index: 1;
-            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
-        }
-        
-        .menu-button {
-            font-size: 2rem;
-            padding: 10px;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-        
-        .game-container {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            z-index: -1;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        
-        .game-frame {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-    </style>
+    <title>Loser.fyi in same tab</title>
 </head>
 <body>
-    <div class="container">
-        <div class="menu" id="menu">
-            <a href="https://loserboysonyt.github.io/" class="game-frame"></a>
-            <button class="menu-button" onclick="toggleMenu()">☰</button>
-        </div>
-        <iframe src="https://loserboysonyt.github.io/" class="game-container"></iframe>
-    </div>
-    
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.style.display === "none") {
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
-        }
-    </script>
+    <a href="https://loserboysonyt.github.io/" target="_self">Play Loser.fi in the same tab</a>
 </body>
 </html>
