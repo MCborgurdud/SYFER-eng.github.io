@@ -1,87 +1,77 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Menu with Reactable Background</title>
-<style>
-  body {
-    background-color: #f0f0f0;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-  }
-  .nav-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
-    padding: 10px;
-    margin-bottom: 50px;
-  }
-  .nav-item {
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-    cursor: pointer;
-  }
-  .nav-item:hover {
-    color: #007bff;
-  }
-  .nav-item.active {
-    color: #007bff;
-  }
-  .start-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  .start-button:hover {
-    background-color: #0069d9;
-  }
-  .start-button:active {
-    transform: scale(0.95);
-  }
-  .content {
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(to bottom right, #fff, #f0f0f0);
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
-  }
-  .content h1 {
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('path_to_reactable_background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 50px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        .nav:hover {
+            background-color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a {
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .start-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: blue;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .start-button:hover {
+            background-color: darkblue;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
 <body>
-  <div class="container">
-    <div class="nav-container">
-      <div class="nav-item">Home</div>
-      <div class="nav-item">About</div>
-      <div class="nav-item">Services</div>
-      <div class="nav-item">Contact</div>
-      <button class="start-button" onclick="alert('Start button clicked')">Start</button>
-    </div>
-    <div class="content">
-      <h1>Welcome to our homepage!</h1>
-    </div>
-  </div>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="start-button" onclick="window.location.href='/different-page.html'">Start</div>
+
+    <script>
+        // You can use JavaScript or a framework like React to handle the button click and redirect to different pages
+    </script>
 </body>
 </html>
