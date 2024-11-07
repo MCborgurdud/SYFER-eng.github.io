@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .reactive-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('your-background-image.jpg'); /* Replace with your own background image */
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .black-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: black;
+            z-index: 1;
+            transition: 0.5s;
+        }
+
+        .black-screen.active {
+            height: 100%;
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="reactive-bg"></div>
+    <div class="content">
+        <!-- Your content goes here -->
+    </div>
+    <div class="black-screen"></div>
+
+    <script>
+        const blackScreen = document.querySelector('.black-screen');
+        blackScreen.addEventListener('scroll', function() {
+            if (this.classList.contains('active')) {
+                this.classList.remove('active');
+            } else {
+                this.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
