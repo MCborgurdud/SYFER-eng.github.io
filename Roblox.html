@@ -1,66 +1,41 @@
-<link rel="shortcut icon" href="https://cdn3.emoji.gg/emojis/16037-haunterspin.gif"/>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syfers Roblox</title>
+    <title>Play Arkadium Games</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-        }
-        .container {
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             height: 100vh;
-            width: 100vw;
+            margin: 0;
+            background-color: #f0f0f0;
         }
-        .menu {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 20px;
-            background-color: #000;
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        a.play-button {
+            padding: 15px 25px;
+            font-size: 16px;
             color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #007bff; /* Bootstrap primary blue */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .menu button {
-            margin-left: 20px;
-            padding: 5px;
-            font-size: 20px;
-        }
-        .game-area {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .game-iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
+        a.play-button:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-                <a href="Syfer-Menu.html">Home</a>
-        </nav>
-        </div>
-        <div class="game-area">
-            <iframe class="game-iframe" src="https://now.gg/"></iframe>
-        </div>
-    </div>
-    <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
-            document.querySelector('.menu').classList.toggle('active');
-        });
-    </script>
+    <h1>Ready to Play Arkadium Games?</h1>
+    <a href="https://www.arkadium.com/free-online-games/" target="_blank" class="play-button">Play Now</a>
+    <p>Click the button above to start playing!</p>
 </body>
 </html>
