@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reactive Background</title>
+    <title>Blurry Background on Scroll</title>
     <style>
         body {
             margin: 0;
@@ -11,58 +11,90 @@
             position: relative;
         }
 
-        .reactive-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://wallpapers.com/images/hd/reactive-lc3p150ecg7i58hr.jpg'); /* Replace with your own background image */
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('your_background_image.jpg');
             background-size: cover;
-            background-position: center;
-            z-index: 0;
-        }
-
-        .black-screen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50%;
-            background-color: black;
-            z-index: 1;
-            transition: 0.5s;
-        }
-
-        .black-screen.active {
-            height: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: background-image 0.5s ease-in-out;
         }
 
         .content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
+            z-index: 1;
+            padding: 50px;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .overlay {
+            height: 50vh;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, black);
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.5s ease-in-out;
+            will-change: transform, opacity;
+        }
+
+        .container:before {
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(to top, black, transparent);
+            opacity: 0;
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .container.scrolled:before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .container.scrolled .overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                font-size: 1.5rem;
+            }
         }
     </style>
-</head>
-<body>
-    <div class="reactive-bg"></div>
-    <div class="content">
-        <!-- Your content goes here -->
-    </div>
-    <div class="black-screen"></div>
-
     <script>
-        const blackScreen = document.querySelector('.black-screen');
-        blackScreen.addEventListener('scroll', function() {
-            if (this.classList.contains('active')) {
-                this.classList.remove('active');
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const container = document.querySelector('.container');
+            if (scrollPosition > 100) {
+                container.classList.add('scrolled');
             } else {
-                this.classList.add('active');
+                container.classList.remove('scrolled');
             }
         });
     </script>
+</head>
+<body>
+    <div class="container" style="background-image: url('your_background_image.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to my website</h1>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisl odio porttitor orci, ac euismod enim risus eget purus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent mauris ante, aliquet ut nibh non, facilisis aliquet purus. Pellentesque at turpis a mauris faucibus pellentesque.</p>
+            <a href="#" style="color: white; text-decoration: none;">Scroll down to see the effect</a>
+        </div>
+    </div>
 </body>
 </html>
