@@ -2,76 +2,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Reactable Background with Pink Start Button</title>
     <style>
         body {
-            background-image: url('path_to_reactable_background.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
             margin: 0;
             padding: 0;
-        }
-
-        .nav {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('path_to_your_background_image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            height: 50px;
-            background-color: transparent;
-            transition: background-color 0.3s ease;
-            z-index: 1;
         }
-
-        .nav:hover {
-            background-color: white;
-            transition: background-color 0.3s ease;
+        .container {
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0px grey;
+            width: 500px;
+            height: 200px;
+            background-color: #fff;
+            z-index: 999;
+            position: absolute;
         }
-
-        .nav a {
-            color: white;
-            padding: 10px 20px;
-            font-size: 20px;
+        .nav-link {
             text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: black;
-            transition: color 0.3s ease;
-        }
-
-        .start-button {
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: blue;
-            border: none;
-            border-radius: 10px;
-            color: white;
             font-size: 20px;
-            cursor: pointer;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-
-        .start-button:hover {
-            background-color: darkblue;
-            transition: background-color 0.3s ease;
+        .nav-link:hover {
+            background-color: #f1c40f;
+        }
+        .start-button {
+            background-color: #f1c40f;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 0 1rem;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="start-button" onclick="window.location.href='/different-page.html'">Start</div>
-
-    <script>
-        // You can use JavaScript or a framework like React to handle the button click and redirect to different pages
-    </script>
+    <div class="container">
+        <nav>
+            <a href="page1.html" class="nav-link">Page 1</a>
+            <a href="page2.html" class="nav-link">Page 2</a>
+            <a href="page3.html" class="nav-link">Page 3</a>
+        </nav>
+        <button class="start-button" onclick="window.location.assign('page1.html')">Pink Start Button</button>
+    </div>
 </body>
 </html>
