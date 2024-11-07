@@ -19,23 +19,24 @@
             color: #333;
             margin-bottom: 20px;
         }
-        a.play-button {
-            padding: 15px 25px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff; /* Bootstrap primary blue */
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: 2px solid #007bff; /* Blue border for the iframe */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
-        a.play-button:hover {
-            background-color: #0056b3; /* Darker shade for hover effect */
+        .warning {
+            margin-top: 10px;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>Ready to Play Arkadium Games?</h1>
-    <a href="https://www.arkadium.com/free-online-games/" target="_blank" class="play-button">Play Now</a>
-    <p>Click the button above to start playing!</p>
+    <h1>Play Arkadium Games</h1>
+    <iframe src="https://www.arkadium.com/free-online-games/" frameborder="0"></iframe>
+    <div class="warning">
+        <p>Please note: The games may not load due to security restrictions.</p>
+    </div>
 </body>
 </html>
